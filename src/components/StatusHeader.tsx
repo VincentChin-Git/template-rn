@@ -1,7 +1,7 @@
 import { StatusBar as SB } from 'expo-status-bar';
 import { StatusBar, View } from 'react-native';
 
-import invertColor from '@/utils/invertColor';
+import invertColor from '../utils/invertColor';
 
 const StatusHeader = () => {
   const statusBarHeight = StatusBar.currentHeight || 0;
