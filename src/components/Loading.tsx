@@ -7,7 +7,7 @@ const Loading = ({ mode = 'center' }) => {
         <View
           style={{
             position: 'absolute',
-            height: '110%',
+            height: '100%',
             width: '100%',
             display: 'flex',
             justifyContent: 'center',
@@ -16,7 +16,7 @@ const Loading = ({ mode = 'center' }) => {
             opacity: 0.7,
             backgroundColor: '#000',
           }}>
-          <View style={{ paddingTop: StatusBar.currentHeight }} />
+          {/* <View style={{ paddingTop: StatusBar.currentHeight }} /> */}
           <ActivityIndicator size="large" />
         </View>
       )}

@@ -4,12 +4,14 @@ import { Provider } from 'react-redux';
 
 import StatusHeader from './src/components/StatusHeader';
 import appStore from './src/store/store';
+import Loading from './src/components/Loading';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
 
-  const routes: { name: string; elem: (props: any) => React.JSX.Element }[] =
-    [];
+  const routes: { name: string; elem: (props: any) => React.JSX.Element }[] = [
+    { name: 'Test', elem: () => <Loading /> },
+  ];
 
   return (
     <Provider store={appStore}>
